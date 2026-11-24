@@ -9,7 +9,8 @@ Changes committed to `main` are published after the Pages build completes.
 1. On GitHub, open the repository's **Code** tab and choose **Add file > Create new file**.
 2. Name the file `_posts/YYYY-MM-DD-your-title.md`, replacing the date and title.
    For example: `_posts/2026-11-24-my-first-project.md`. Use today's date or an
-   earlier date; future-dated posts are not published until their date arrives.
+   earlier date; future-dated posts are omitted until the site is rebuilt after
+   their date arrives.
 3. Paste the following into the editor and replace the example text:
 
    ```markdown

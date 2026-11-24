@@ -14,14 +14,14 @@ permalink: /journals/
   <header class="site-header">
     <nav class="container site-nav" aria-label="Main navigation">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Jonathan Wilkinson, home">
-        <span class="brand-name">JONATHAN WILKINSON</span>
-        <small class="brand-role">ELECTRONIC ENGINEER</small>
+        <span class="brand-label">Name:</span>
+        <span class="brand-name">Jonathan Wilkinson</span>
       </a>
       <div class="nav-links">
         <a href="{{ '/#work' | relative_url }}">Work</a>
         <a href="{{ '/journals/' | relative_url }}" aria-current="page">Journals</a>
         <a href="{{ '/#about' | relative_url }}">About</a>
-        <a href="{{ '/#contact' | relative_url }}" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/#contact' | relative_url }}" class="nav-contact">Get in touch {% include icon.html name="arrow-up-right" %}</a>
       </div>
     </nav>
   </header>
@@ -43,6 +43,6 @@ permalink: /journals/
       {% endif %}
     </div>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>© JONATHAN WILKINSON <span class="footer-dot">●</span> ELECTRONIC ENGINEERING</span><a href="{{ '/' | relative_url }}">BACK TO HOME ↑</a></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© JONATHAN WILKINSON <span class="footer-dot" aria-hidden="true"></span> ELECTRONIC ENGINEERING</span><a href="{{ '/' | relative_url }}">BACK TO HOME {% include icon.html name="arrow-up" %}</a></div></footer>
 </body>
 </html>

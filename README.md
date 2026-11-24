@@ -73,6 +73,10 @@ All repository files and posts are public. Do not upload anything private.
 - Edit `index.html` to update the introduction, interests, and contact link.
 - Feature journal posts to choose the projects displayed on the homepage.
 - Adjust colours and styling in `style.css`.
+- To add your portrait, upload a square photo to `images`, then replace
+  `/images/portrait-placeholder.svg` in `index.html` with its path (for example
+  `/images/me.jpg`). Update the image's `alt` text and the caption below it too.
+  The frame, shadow and corner tape are applied automatically.
 - `baseurl` in `_config.yml` is set for this repository's project-site address.
   Update it if the repository is renamed or a custom domain is configured.
 

@@ -31,9 +31,9 @@
       <div class="container">
         <div class="row align-items-center g-5 hero-row">
           <div class="col-lg-7">
-            <p class="hero-note">Hello there {% include icon.html name="sparkle" %}</p>
+            <p class="hero-note">Ahoy!</p>
             <h1>Hello! Welcome to <span>my portfolio.</span></h1>
-            <p class="hero-copy">This is where I share my electronics and embedded systems projects, along with the things I learn while making them.</p>
+            <p class="hero-copy">This is where I share my electronics projects and all the things I learn whilst making them.</p>
             <div class="hero-actions">
               <a class="button button-dark" href="#work">See my projects {% include icon.html name="arrow-up-right" %}</a>
               <a class="text-link" href="#about">A little about me {% include icon.html name="arrow-down" %}</a>
@@ -61,7 +61,7 @@
                 <a class="text-link" href="{{ '/journals/' | relative_url }}">Browse journals {% include icon.html name="arrow-up-right" %}</a>
               </div>
               {% endfor %}
-              <span class="sketch-annotation" aria-hidden="true">a page from my notebook {% include icon.html name="arrow-up-right" %}</span>
+              <span class="sketch-annotation" aria-hidden="true">take a look!</span>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
         {% else %}
         <p class="journal-empty">Selected work coming soon.</p>
         {% endif %}
-        <div id="journal" class="work-footnote"><span>MORE PROJECTS AND NOTES</span><a href="{{ '/journals/' | relative_url }}">VIEW ALL JOURNALS {% include icon.html name="arrow-up-right" %}</a></div>
+        <div id="journal" class="work-footnote"><a href="{{ '/journals/' | relative_url }}">VIEW ALL JOURNALS {% include icon.html name="arrow-up-right" %}</a></div>
       </div>
     </section>
 
@@ -95,13 +95,16 @@
         <div class="row g-5">
           <div class="col-lg-5"><h2>A little more <em>about me.</em></h2><p class="margin-note" aria-hidden="true">a bit about the person<br>behind the projects {% include icon.html name="arrow-up-right" %}</p></div>
           <div class="col-lg-6 offset-lg-1">
-            <p class="about-lead">I enjoy figuring out how things work and making things of my own.</p>
+            <p class="about-lead">“The way to succeed is to double your failure rate.” — Thomas J. Watson</p>
             <figure class="portrait">
               <img src="{{ '/images/portrait-placeholder.svg' | relative_url }}" alt="Placeholder for a photo of Jonathan" width="600" height="600" loading="lazy">
               <figcaption>A photo of me, coming soon.</figcaption>
             </figure>
-            <p class="about-copy">I’m Jonathan, and this is a space for exploring electronic engineering: the systems we build, the problems we solve, and everything we learn along the way.</p>
-            <p class="about-copy">I’m interested in the full journey, from understanding a problem and sketching an idea to testing, refining, and making it real.</p>
+            <p class="about-copy">Hi, I'm Jonathan. I have been creating electronics projects and modifying devices since I was a young teenager. This pushed me to study Electronic Engineering at 
+              the University of Exeter where I did my integrated masters degree.</p>
+            <p class="about-copy">This site includes personal projects, university projects and also projects from my job at said university. My role was creating equipment and systems for data
+            collection and automation.</p>
+            <p class="about-copy">This work includes experimental physics, embedded systems, pneumatics, art, analogue amplifiers, RF synthesis and modulation, manufacturing, control systems, robotics and more.</p>
           </div>
         </div>
       </div>

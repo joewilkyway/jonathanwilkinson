@@ -54,6 +54,12 @@ from the `images` folder, and `tags:` adds labels below the description. If you
 omit `image:`, the tile uses a built-in illustration instead. These fields can be
 added to existing posts too, between the `---` lines at the top.
 
+The taped journal spotlight at the top of the homepage picks from **all published
+posts** at random on each page load, independently of `featured`. It uses the
+same image and description fields as the tiles. The same post can be picked
+again; with only one post, that post is always shown. If JavaScript is disabled,
+the latest post is shown instead.
+
 Markdown supports headings (`## Heading`), **bold** (`**bold**`), lists (`- item`),
 and links (`[link text](https://example.com)`). GitHub's editor has a Preview
 tab so you can check your writing before committing.

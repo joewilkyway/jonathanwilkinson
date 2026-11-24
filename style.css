@@ -76,7 +76,12 @@ h1 span, h2 em { color: #5b518d; font-style: normal; }
 .sketch-paper::before { content: ""; position: absolute; width: 94px; height: 28px; top: -13px; left: 50%; transform: translateX(-50%) rotate(-5deg); background: rgba(210,191,164,.75); }
 .sketch-heading, .sketch-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; font: 700 22px/1 var(--hand); }
 .sketch-heading span:last-child { font-family: sans-serif; font-size: 17px; }
-.sketch-circuit { width: 100%; max-height: 270px; margin: 12px 0; }
+.journal-spotlight[hidden] { display: none; }
+.spotlight-link { display: block; }
+.spotlight-link:hover .spotlight-title { color: #765a8b; }
+.spotlight-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: 18px; }
+.spotlight-title { font-size: 38px; line-height: 1.05; margin: 10px 0; overflow-wrap: anywhere; }
+.spotlight-summary { color: var(--muted); font-size: 14px; line-height: 1.7; }
 .sketch-bottom { font-size: 20px; }
 .sketch-annotation { position: absolute; right: 0; bottom: 0; font-size: 23px; transform: rotate(-3deg); }
 

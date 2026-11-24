@@ -22,7 +22,8 @@ body {
   color: var(--ink);
   font-family: "DM Sans", sans-serif;
   background-color: var(--paper);
-  background-image: linear-gradient(90deg, transparent 0, transparent 91px, rgba(194,106,108,.3) 91px, rgba(194,106,108,.3) 92px, transparent 92px), repeating-linear-gradient(180deg, transparent 0, transparent 35px, rgba(98,132,165,.16) 35px, rgba(98,132,165,.16) 36px), url("images/paper-grain.svg?v=2");
+  background-image: linear-gradient(90deg, transparent 0, transparent 91px, rgba(194,106,108,.3) 91px, rgba(194,106,108,.3) 92px, transparent 92px), repeating-linear-gradient(180deg, transparent 0, transparent 35px, rgba(98,132,165,.16) 35px, rgba(98,132,165,.16) 36px), url("images/paper-texture.webp");
+  background-size: auto, auto, 768px 768px;
   box-shadow: 0 3px 1px #b3ada4, 5px 7px 0 #e1d9cb, 8px 11px 0 #b9b0a5, 0 25px 65px rgba(0,0,0,.45);
 }
 body::before {
@@ -96,7 +97,7 @@ h1 span, h2 em {
 .work-section { background: transparent; }
 .section-heading { margin-bottom: 50px; }
 .section-intro { max-width: 360px; color: var(--muted); font-size: 15px; line-height: 1.8; margin: 0 0 4px auto; }
-.project-card { --card-paper: #fffdf6; --card-angle: -.8deg; --tape-angle: -4deg; position: relative; height: 100%; border: 1px solid #d5cec2; border-radius: 2px 1px 5px 2px; padding: 10px; background-color: var(--card-paper); background-image: url("images/paper-grain.svg?v=2"); box-shadow: 1px 2px 2px rgba(75,64,59,.1), 2px 5px 10px rgba(75,64,59,.18); transform: rotate(var(--card-angle)); transition: transform .2s, box-shadow .2s; }
+.project-card { --card-paper: #fffdf6; --card-angle: -.8deg; --tape-angle: -4deg; position: relative; height: 100%; border: 1px solid #d5cec2; border-radius: 2px 1px 5px 2px; padding: 10px; background-color: var(--card-paper); background-image: url("images/paper-texture.webp"); background-size: 768px 768px; box-shadow: 1px 2px 2px rgba(75,64,59,.1), 2px 5px 10px rgba(75,64,59,.18); transform: rotate(var(--card-angle)); transition: transform .2s, box-shadow .2s; }
 .row > div:nth-child(4n + 2) .project-card { --card-paper: #f5f2eb; --card-angle: 1.1deg; --tape-angle: 5deg; }
 .row > div:nth-child(4n + 3) .project-card { --card-paper: #faf8f8; --card-angle: -.4deg; --tape-angle: -7deg; }
 .row > div:nth-child(4n + 4) .project-card { --card-paper: #f8f6ec; --card-angle: .6deg; --tape-angle: 2deg; }
@@ -135,7 +136,7 @@ h1 span, h2 em {
 .about-lead { font: 700 30px/1.25 var(--hand); margin: 0 0 22px; }
 .about-copy { color: var(--muted); font-size: 15px; line-height: 1.9; }
 .margin-note { font-size: 25px; line-height: 1.1; transform: rotate(-4deg); margin: 40px 0 0 15px; }
-.portrait { position: relative; box-sizing: border-box; width: min(calc(100% - 24px), 340px); margin: 35px auto 40px; padding: 12px 12px 5px; background: #fffdf6 url("images/paper-grain.svg?v=2"); box-shadow: 2px 5px 12px rgba(75,64,59,.23); transform: rotate(-1deg); }
+.portrait { position: relative; box-sizing: border-box; width: min(calc(100% - 24px), 340px); margin: 35px auto 40px; padding: 12px 12px 5px; background: #fffdf6 url("images/paper-texture.webp") 0 0 / 768px 768px; box-shadow: 2px 5px 12px rgba(75,64,59,.23); transform: rotate(-1deg); }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
 .portrait figcaption { margin: 10px 0 6px; color: var(--muted); text-align: center; font: 600 22px/1.2 var(--hand); }
 .portrait::before, .portrait::after { content: ""; position: absolute; z-index: 1; width: 76px; height: 25px; background: rgba(204,189,166,.75); pointer-events: none; }
@@ -183,7 +184,7 @@ h1 span, h2 em {
   .section-intro { margin-left: 0; }
 }
 @media (max-width: 575.98px) {
-  body { margin: 8px 7px 8px 13px; padding-left: 28px; background-image: linear-gradient(90deg, transparent 0, transparent 37px, rgba(194,106,108,.3) 37px, rgba(194,106,108,.3) 38px, transparent 38px), repeating-linear-gradient(180deg, transparent 0, transparent 35px, rgba(98,132,165,.16) 35px, rgba(98,132,165,.16) 36px), url("images/paper-grain.svg?v=2"); }
+  body { margin: 8px 7px 8px 13px; padding-left: 28px; background-image: linear-gradient(90deg, transparent 0, transparent 37px, rgba(194,106,108,.3) 37px, rgba(194,106,108,.3) 38px, transparent 38px), repeating-linear-gradient(180deg, transparent 0, transparent 35px, rgba(98,132,165,.16) 35px, rgba(98,132,165,.16) 36px), url("images/paper-texture.webp"); }
   body::before { left: 2px; width: 23px; background-size: 23px 60px; }
   .container { padding-left: 22px; padding-right: 22px; }
   .nav-links { font-size: 19px; }

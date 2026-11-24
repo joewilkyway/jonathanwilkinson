@@ -90,6 +90,8 @@ All repository files and posts are public. Do not upload anything private.
 ## Customize the portfolio
 
 - Edit `index.html` to update the introduction, interests, and contact link.
+- Edit the name label in both `index.html` and `journals.html` to change the
+  notebook-style header.
 - Feature journal posts to choose the projects displayed on the homepage.
 - Adjust colours and styling in `style.css`.
 - To add your portrait, upload a square photo to `images`, then replace

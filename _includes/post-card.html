@@ -17,7 +17,7 @@
         {% if include.post.tags.size > 0 %}
         <div class="tags">{% for tag in include.post.tags %}<span>{{ tag | escape }}</span>{% endfor %}</div>
         {% endif %}
-        <span class="card-read">Read the journal <span aria-hidden="true">↗</span></span>
+        <span class="card-read">Read the journal {% include icon.html name="arrow-up-right" %}</span>
       </div>
     </a>
   </article>

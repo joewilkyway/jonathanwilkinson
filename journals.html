@@ -1,0 +1,47 @@
+---
+permalink: /journals/
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journals | Jonathan Wilkinson</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Jonathan Wilkinson, home">
+        <span class="brand-mark">jw<span>.</span></span>
+        <span class="brand-name">JONATHAN WILKINSON<br><small>ELECTRONIC ENGINEERING</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="{{ '/#work' | relative_url }}">Work</a>
+        <a href="{{ '/journals/' | relative_url }}" aria-current="page">Journals</a>
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        <a href="{{ '/#contact' | relative_url }}" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main class="section work-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">JOURNALS</p>
+        <h1 class="post-title">Notes from the <span>bench.</span></h1>
+      </div>
+      {% if site.posts.size > 0 %}
+      <div class="row g-4">
+        {% for post in site.posts %}
+        {% include post-card.html post=post %}
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="journal-empty">Posts coming soon.</p>
+      {% endif %}
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© JONATHAN WILKINSON <span class="footer-dot">●</span> ELECTRONIC ENGINEERING</span><a href="{{ '/' | relative_url }}">BACK TO HOME ↑</a></div></footer>
+</body>
+</html>

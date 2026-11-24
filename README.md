@@ -17,6 +17,10 @@ Changes committed to `main` are published after the Pages build completes.
    ---
    layout: post
    title: "My first project"
+   featured: true
+   description: "A short introduction to my project."
+   image: /images/project.jpg
+   tags: [Electronics, Prototyping]
    ---
 
    Write your introduction here.
@@ -28,13 +32,27 @@ Changes committed to `main` are published after the Pages build completes.
    ![A description of the photo](../images/project.jpg)
    ```
 
-4. Upload a photo as described below, or delete the image line if you do not
-   need one. Choose **Commit changes** and commit to `main`.
+4. Upload a photo as described below, or delete the `image:` line and the image
+   line in the post if you do not need one. Choose **Commit changes** and commit
+   to `main`.
 
 The lines between `---` tell Jekyll how to publish the post. Keep them at the
-very top of the file. The post appears automatically in the homepage's Journal
-section, newest first. To edit a post later, open its file under `_posts`, click
-the pencil icon, and commit your changes.
+very top of the file. Every post appears automatically on the Journals page,
+newest first. To edit a post later, open its file under `_posts`, click the
+pencil icon, and commit your changes.
+
+## Choose selected work and tile details
+
+The homepage's Selected Work section shows posts with `featured: true` in their
+top section. Change it to `featured: false`, or remove the line, to show a post
+only on the Journals page. You can feature as many posts as you like; they
+appear newest first.
+
+The optional `description:` is the short text shown on the tile. If omitted, the
+first paragraph of the post is used. The optional `image:` selects a tile photo
+from the `images` folder, and `tags:` adds labels below the description. If you
+omit `image:`, the tile uses a built-in illustration instead. These fields can be
+added to existing posts too, between the `---` lines at the top.
 
 Markdown supports headings (`## Heading`), **bold** (`**bold**`), lists (`- item`),
 and links (`[link text](https://example.com)`). GitHub's editor has a Preview
@@ -53,8 +71,7 @@ All repository files and posts are public. Do not upload anything private.
 ## Customize the portfolio
 
 - Edit `index.html` to update the introduction, interests, and contact link.
-- The three projects on the homepage are **concepts**, not claims of completed
-  work. Replace them with your own projects, descriptions, and links.
+- Feature journal posts to choose the projects displayed on the homepage.
 - Adjust colours and styling in `style.css`.
 - `baseurl` in `_config.yml` is set for this repository's project-site address.
   Update it if the repository is renamed or a custom domain is configured.

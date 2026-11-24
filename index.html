@@ -19,7 +19,7 @@
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
-        <a href="#journal">Journal</a>
+        <a href="{{ '/journals/' | relative_url }}">Journals</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a>
       </div>
@@ -72,49 +72,17 @@
           </div>
           <div class="col-md-5"><p class="section-intro">A look at the kinds of problems I like to explore, from the first schematic to the final working prototype.</p></div>
         </div>
-        <p class="examples-note">PROJECT CONCEPTS / A STARTING POINT FOR THE PORTFOLIO</p>
+        {% assign selected_posts = site.posts | where: "featured", true %}
+        {% if selected_posts.size > 0 %}
         <div class="row g-4">
-          <div class="col-md-4">
-            <article class="project-card">
-              <div class="project-visual visual-one"><span class="visual-label">01 / EMBEDDED SYSTEMS</span><div class="sensor-art" aria-hidden="true"><span></span><span></span><span></span><span></span><b>+</b></div><span class="visual-index">CONCEPT 01</span></div>
-              <div class="project-body"><div class="project-meta"><span>EMBEDDED SYSTEMS</span><span>01 / 03</span></div><h3>Smarter sensing.</h3><p>Exploring how connected sensors can turn real-world signals into useful information.</p><div class="tags"><span>SENSORS</span><span>FIRMWARE</span></div></div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="project-card">
-              <div class="project-visual visual-two"><span class="visual-label">02 / CIRCUIT DESIGN</span><div class="board-art" aria-hidden="true"><div class="board-chip"></div><i></i><i></i><i></i><i></i></div><span class="visual-index">CONCEPT 02</span></div>
-              <div class="project-body"><div class="project-meta"><span>HARDWARE DESIGN</span><span>02 / 03</span></div><h3>From schematic to PCB.</h3><p>Considering the details that take a circuit from an initial idea to a physical board.</p><div class="tags"><span>PCB DESIGN</span><span>PROTOTYPING</span></div></div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="project-card">
-              <div class="project-visual visual-three"><span class="visual-label">03 / INSTRUMENTATION</span><div class="wave-art" aria-hidden="true"><svg viewBox="0 0 280 100" fill="none"><path d="M0 50H28L40 50L50 22L65 78L79 32L92 50H119L130 50L140 22L155 78L169 32L182 50H209L220 50L230 22L245 78L259 32L272 50H280" stroke="currentColor" stroke-width="2"/></svg></div><span class="visual-index">CONCEPT 03</span></div>
-              <div class="project-body"><div class="project-meta"><span>TEST &amp; MEASUREMENT</span><span>03 / 03</span></div><h3>Making signals clear.</h3><p>Investigating measurement and signal processing to make sense of the details.</p><div class="tags"><span>INSTRUMENTATION</span><span>ANALYSIS</span></div></div>
-            </article>
-          </div>
-        </div>
-        <div class="work-footnote"><span>CURIOUS BY DESIGN. PRACTICAL BY NATURE.</span><span>MORE TO COME ↗</span></div>
-      </div>
-    </section>
-
-    <section id="journal" class="section journal-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">JOURNAL</p>
-          <h2>Notes from the <em>bench.</em></h2>
-        </div>
-        {% if site.posts.size > 0 %}
-        <div class="journal-list">
-          {% for post in site.posts %}
-          <article class="journal-item">
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d %B %Y" }}</time>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }} <span aria-hidden="true">↗</span></a></h3>
-          </article>
+          {% for post in selected_posts %}
+          {% include post-card.html post=post %}
           {% endfor %}
         </div>
         {% else %}
-        <p class="journal-empty">Posts coming soon.</p>
+        <p class="journal-empty">Selected work coming soon.</p>
         {% endif %}
+        <div id="journal" class="work-footnote"><span>CURIOUS BY DESIGN. PRACTICAL BY NATURE.</span><a href="{{ '/journals/' | relative_url }}">VIEW ALL JOURNALS ↗</a></div>
       </div>
     </section>
 

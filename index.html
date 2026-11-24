@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,6 +19,7 @@
       </a>
       <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#journal">Journal</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a>
       </div>
@@ -91,6 +94,27 @@
           </div>
         </div>
         <div class="work-footnote"><span>CURIOUS BY DESIGN. PRACTICAL BY NATURE.</span><span>MORE TO COME ↗</span></div>
+      </div>
+    </section>
+
+    <section id="journal" class="section journal-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">JOURNAL</p>
+          <h2>Notes from the <em>bench.</em></h2>
+        </div>
+        {% if site.posts.size > 0 %}
+        <div class="journal-list">
+          {% for post in site.posts %}
+          <article class="journal-item">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%d %B %Y" }}</time>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }} <span aria-hidden="true">↗</span></a></h3>
+          </article>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="journal-empty">Posts coming soon.</p>
+        {% endif %}
       </div>
     </section>
 

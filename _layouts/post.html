@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} | Jonathan Wilkinson</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
+</head>
+<body>
+  <main class="container post section">
+    <a class="post-back" href="{{ '/#journal' | relative_url }}">← Back to the journal</a>
+    <article>
+      <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d %B %Y" }}</time>
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <div class="post-content">{{ content }}</div>
+    </article>
+  </main>
+</body>
+</html>

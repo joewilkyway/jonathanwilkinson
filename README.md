@@ -64,6 +64,19 @@ Markdown supports headings (`## Heading`), **bold** (`**bold**`), lists (`- item
 and links (`[link text](https://example.com)`). GitHub's editor has a Preview
 tab so you can check your writing before committing.
 
+### Notebook-style posts
+
+Ordinary Markdown gets the notebook styling automatically:
+
+- Start a paragraph with `>` for a highlighted note.
+- Use backticks for `inline code`, or wrap multiple lines in triple backticks for
+  a code block.
+- Use `-` or `1.` for lists, `---` on its own line for a hand-drawn divider,
+  and Markdown tables for measurements.
+- Add images using the format below; they get a paper frame automatically.
+
+The GitHub editor's preview may look different from the published site.
+
 ## Add a photo to a post
 
 1. Open the `images` folder on GitHub and choose **Add file > Upload files**.

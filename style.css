@@ -143,3 +143,22 @@ h2 { font-size: clamp(48px, 5.3vw, 72px); font-weight: 600; line-height: 1.04; m
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+.brand-name {
+  font-size: 20px;
+  color: #c5b5ff;
+}
+
+.brand-role {
+  font-size: 9px;
+  color: var(--muted);
+}
+
+@supports (background-clip: text) {
+  .brand-name {
+    background: linear-gradient(110deg, #d6bdff, #90c9ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

@@ -94,6 +94,8 @@ All repository files and posts are public. Do not upload anything private.
   notebook-style header.
 - Feature journal posts to choose the projects displayed on the homepage.
 - Adjust colours and styling in `style.css`.
+- The paper grain in `images/paper-grain.svg` is tiled across the notebook page,
+  project cards, and portrait frame.
 - To add your portrait, upload a square photo to `images`, then replace
   `/images/portrait-placeholder.svg` in `index.html` with its path (for example
   `/images/me.jpg`). Update the image's `alt` text and the caption below it too.

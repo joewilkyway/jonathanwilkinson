@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="8" viewBox="0 0 1000 8" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="12" viewBox="0 0 1000 12" preserveAspectRatio="none">
   <g fill="none" stroke="#777080" stroke-linecap="round">
-    <path d="M2 5Q90 2 170 4T340 3T510 5T680 3T850 4T998 3" stroke-width="1.2" opacity=".65"/>
-    <path d="M6 6Q130 4 250 5T500 4T750 5T995 4" stroke-width=".7" opacity=".35"/>
+    <path d="M3 7Q90 4 170 6T340 5T510 7T680 5T850 6T997 5" stroke-width="4.8" opacity=".65"/>
+    <path d="M6 8Q130 6 250 7T500 6T750 7T995 6" stroke-width="2.8" opacity=".35"/>
   </g>
 </svg>

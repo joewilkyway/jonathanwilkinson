@@ -96,7 +96,8 @@ All repository files and posts are public. Do not upload anything private.
 - Adjust colours and styling in `style.css`.
 - The seamless paper texture in `images/paper-texture.webp` is derived from
   `slightly-textured-wallpaper-pattern.jpg` and tiled across the notebook page,
-  project cards, and portrait frame.
+  project cards, and portrait frame. Its low-opacity detail is baked into the
+  image; `background-size` controls the texture scale without changing the ruling.
 - To add your portrait, upload a square photo to `images`, then replace
   `/images/portrait-placeholder.svg` in `index.html` with its path (for example
   `/images/me.jpg`). Update the image's `alt` text and the caption below it too.
